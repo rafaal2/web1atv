@@ -1,83 +1,174 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
-body{
-  background:#ececec;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-  font-size:32px;
-  margin-top:30px;
-  font-family: 'Oswald', sans-serif;  
-  text-align:center;
+header {
+  background-color: #3545A7;
+  padding: 10px;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #0088d2;
+}
+
+.navigation-list .nav-item img {
+  width: 50px;
+  height: auto;
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px) {
+  .hamburguer {
+    display: block;
+  }
+}
+
+main {
+  height: 80vh;
+}
+
+
+body {
+  background: #ececec;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 40px;
 }
 
 
 .viagens-internacionaish1 h1 {
-    position: absolute;
-    text-align: left;
-    top: 18rem;
-    left: 1rem;
-    color: white;
+  position: absolute;
+  text-align: left;
+  top: 18rem;
+  left: 1rem;
+  color: white;
 }
 
 .viagens-nacionaish1 h1 {
-    position: absolute;
-    text-align: left;
-    top: 48rem;
-    right: 1rem;
-    color: white;
-}
-.viagens-internacionais{
-    background-color: #3545A7;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-.viagens-nacionais{
-    background-color: #3545A7;
-    border-radius: 10px;
- 
+  position: absolute;
+  text-align: left;
+  top: 48rem;
+  right: 1rem;
+  color: white;
 }
 
-.blog-wrapperinternacional{
-    margin-left: 300px;
-  padding:15px;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  flex-wrap:wrap;
-  .blog-card{
+.viagens-internacionais {
+  background-color: #3545A7;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.viagens-nacionais {
+  background-color: #3545A7;
+  border-radius: 10px;
+
+}
+
+.blog-wrapperinternacional {
+  margin-left: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .blog-card {
     @include transition(.3s);
-    max-width:200px;
+    max-width: 200px;
     max-height: 400px;
-    margin:15px;
-    background:#fff;
-    border:3px solid white;
+    margin: 15px;
+    background: #fff;
+    border: 3px solid white;
     border-radius: 10px;
-    text-align:center;
-    cursor:pointer;
-    &:hover{
-      box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
-      .card-img{
-        img{
-          opacity:0.8;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
+
+      .card-img {
+        img {
+          opacity: 0.8;
         }
       }
     }
-    .card-img{
-      position:relative;
-      text-align:center;
-      background:#3545A7;
+
+    .card-img {
+      position: relative;
+      text-align: center;
+      background: #3545A7;
       border-radius: 10px;
-      img{
+
+      img {
         @include transition(.3s);
-        height:135px;
-        width:100%;
-        border-bottom:4px solid #3545A7;
+        height: 135px;
+        width: 100%;
+        border-bottom: 4px solid #3545A7;
         border-radius: 10px;
       }
-      &:before{
-        content:'';
+
+      &:before {
+        content: '';
         position: absolute;
         bottom: -8px;
         left: 50%;
@@ -88,140 +179,161 @@ h1{
         border-left: solid 10px transparent;
         border-right: solid 10px transparent;
       }
-      h1{
-        position:absolute;
-        margin:0;
-        font-size:42px;
-        bottom:15px;
-        width:100%;
-        color:#fff;
+
+      h1 {
+        position: absolute;
+        margin: 0;
+        font-size: 42px;
+        bottom: 15px;
+        width: 100%;
+        color: #fff;
         font-family: 'Slabo 27px', serif;
       }
     }
-    .card-details{
+
+    .card-details {
       font-family: "Poppins", sans-serif;
-      color:#3C3C3C;
-      span{   
-        padding:0 30px;
-        i{
-          margin-right:5px;
+      color: #3C3C3C;
+
+      span {
+        padding: 0 30px;
+
+        i {
+          margin-right: 5px;
           margin-top: 5px;
         }
-        
+
       }
     }
-    .card-text{
-      padding:5px 5px;
+
+    .card-text {
+      padding: 5px 5px;
       font-family: "Poppins", sans-serif;
-      line-height:15px;
+      line-height: 15px;
     }
-    .read-more{
+
+    .read-more {
       @include transition(.3s);
-      display:inline-block;
-      width:auto;
-      text-align:center;
-      text-transform:uppercase;
-      background:#3545A7;
-      color:#fff;
-      padding:15px;
+      display: inline-block;
+      width: auto;
+      text-align: center;
+      text-transform: uppercase;
+      background: #3545A7;
+      color: #fff;
+      padding: 15px;
       border-radius: 10px;
       font-family: "Poppins", sans-serif;
-      &:hover{
-        background: darken(#3545A7,20%);
+
+      &:hover {
+        background: darken(#3545A7, 20%);
       }
     }
   }
 }
-.blog-wrappernacional{
-    margin-right: 300px;
-    padding:15px;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    flex-wrap:wrap;
-    .blog-card{
-      @include transition(.3s);
-      max-width:200px;
-      max-height: 400px;
-      margin:15px;
-      background:#fff;
-      border:3px solid white;
-      border-radius: 10px;
-      text-align:center;
-      cursor:pointer;
-      &:hover{
-        box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
-        .card-img{
-          img{
-            opacity:0.8;
-          }
-        }
-      }
-      .card-img{
-        position:relative;
-        text-align:center;
-        background:#3545A7;
-        border-radius: 10px;
-        img{
-          @include transition(.3s);
-          height:135px;
-          width:100%;
-          border-bottom:4px solid #3545A7;
-          border-radius: 10px;
-        }
-        &:before{
-          content:'';
-          position: absolute;
-          bottom: -8px;
-          left: 50%;
-          margin-left: -10px;
-          width: 0;
-          height: 0;
-          border-top: solid 10px #3545A7;
-          border-left: solid 10px transparent;
-          border-right: solid 10px transparent;
-        }
-        h1{
-          position:absolute;
-          margin:0;
-          font-size:42px;
-          bottom:15px;
-          width:100%;
-          color:#fff;
-          font-family: 'Slabo 27px', serif;
-        }
-      }
-      .card-details{
-        font-family: "Poppins", sans-serif;
-        color:#3C3C3C;
-        span{   
-          padding:0 30px;
-          i{
-            margin-right:5px;
-            margin-top: 5px;
-          }
-          
-        }
-      }
-      .card-text{
-        padding:5px 5px;
-        font-family: "Poppins", sans-serif;
-        line-height:15px;
-      }
-      .read-more{
-        @include transition(.3s);
-        display:inline-block;
-        width:auto;
-        text-align:center;
-        text-transform:uppercase;
-        background:#3545A7;
-        color:#fff;
-        padding:15px;
-        border-radius: 10px;
-        font-family: "Poppins", sans-serif;
-        &:hover{
-          background: darken(#3545A7,20%);
+
+.blog-wrappernacional {
+  margin-right: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .blog-card {
+    @include transition(.3s);
+    max-width: 200px;
+    max-height: 400px;
+    margin: 15px;
+    background: #fff;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
+
+      .card-img {
+        img {
+          opacity: 0.8;
         }
       }
     }
+
+    .card-img {
+      position: relative;
+      text-align: center;
+      background: #3545A7;
+      border-radius: 10px;
+
+      img {
+        @include transition(.3s);
+        height: 135px;
+        width: 100%;
+        border-bottom: 4px solid #3545A7;
+        border-radius: 10px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-top: solid 10px #3545A7;
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+      }
+
+      h1 {
+        position: absolute;
+        margin: 0;
+        font-size: 42px;
+        bottom: 15px;
+        width: 100%;
+        color: #fff;
+        font-family: 'Slabo 27px', serif;
+      }
+    }
+
+    .card-details {
+      font-family: "Poppins", sans-serif;
+      color: #3C3C3C;
+
+      span {
+        padding: 0 30px;
+
+        i {
+          margin-right: 5px;
+          margin-top: 5px;
+        }
+
+      }
+    }
+
+    .card-text {
+      padding: 5px 5px;
+      font-family: "Poppins", sans-serif;
+      line-height: 15px;
+    }
+
+    .read-more {
+      @include transition(.3s);
+      display: inline-block;
+      width: auto;
+      text-align: center;
+      text-transform: uppercase;
+      background: #3545A7;
+      color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      font-family: "Poppins", sans-serif;
+
+      &:hover {
+        background: darken(#3545A7, 20%);
+      }
+    }
   }
+}
