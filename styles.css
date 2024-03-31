@@ -93,6 +93,8 @@ h1 {
 
 .wrapper {
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -336,4 +338,37 @@ h1 {
       }
     }
   }
+}
+
+/* footer */
+.footer {
+  background-color: #3545A7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer-nav {
+  margin-top: 20px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
 }
