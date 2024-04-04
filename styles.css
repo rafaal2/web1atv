@@ -69,12 +69,6 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:768px) {
-  .hamburguer {
-    display: block;
-  }
-}
-
 main {
   height: 80vh;
 }
@@ -371,4 +365,50 @@ h1 {
 .footer-link {
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin-top: 20px;
+  }
+
+  .viagens-internacionaish1 h1,
+  .viagens-nacionaish1 h1 {
+    position: static;
+    text-align: center;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .blog-wrapperinternacional,
+  .blog-wrappernacional {
+    margin: 0;
+  }
+
+  .blog-card {
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  .blog-card .card-img img {
+    height: 100px; 
+  }
+
+  .navigation-list {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .navigation {
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
 }
