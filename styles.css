@@ -7,6 +7,7 @@
 }
 
 header {
+  font-family: "Poppins", sans-serif;
   background-color: #3545A7;
   padding: 10px;
   color: #fff;
@@ -335,6 +336,7 @@ h1 {
 }
 
 .footer {
+  font-family: "Poppins", sans-serif;
   background-color: #3545A7;
   color: #fff;
   padding: 20px;
@@ -408,6 +410,7 @@ h1 {
   }
 
   .footer {
+    font-family: "Poppins", sans-serif;
     padding: 10px;
   }
 }
