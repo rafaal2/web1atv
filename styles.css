@@ -393,7 +393,7 @@ h1 {
   }
 
   .blog-card .card-img img {
-    height: 100px; 
+    height: 100px;
   }
 
   .navigation-list {
@@ -437,7 +437,7 @@ h1 {
 }
 
 .login-container button {
-  background-color:#3545A7;
+  background-color: #3545A7;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -450,6 +450,7 @@ h1 {
 .login-container button:hover {
   background-color: #3545A7;
 }
+
 .register-container {
   position: absolute;
   top: 75%;
@@ -474,6 +475,7 @@ h1 {
   font-family: Poppins, sans-serif;
   margin-top: 10px;
 }
+
 .hidden {
   display: none;
 }
