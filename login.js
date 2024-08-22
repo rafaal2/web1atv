@@ -1,5 +1,3 @@
-// login.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const loginButton = document.getElementById('login-button');
     const emailInput = document.getElementById('email');
