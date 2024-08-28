@@ -1,0 +1,82 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    background: #ececec;
+}
+
+header {
+    background-color: #3545A7;
+    padding: 10px;
+    color: #fff;
+}
+
+footer {
+    background-color: #3545A7;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+.footer-nav {
+    margin-top: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+}
+
+.about-section {
+    max-width: 800px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
